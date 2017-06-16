@@ -1,0 +1,64 @@
+"Group","Title","Username","Password","URL","Notes"
+"Racine/skores/hosts","jeremy-ubuntu host","root","Supinfo2015","",""
+"Racine/skores/hosts/Prod","BDD prod master real1.sportytrader.com","jmirre","Su20pinfo15","ssh -p 2203 jmirre@178.33.61.103
+","centos"
+"Racine/skores/hosts/Prod","jail juvarnish","jmirre","Su20pinfo15","ssh -p 221 jmirre@5.39.71.56",""
+"Racine/skores/hosts/Prod","JAIL Web7 prod (wc-w7ap56.wincomparator.net)","jmirre","Su20pinfo15","ssh -p 231 jmirre@5.39.71.106",""
+"Racine/skores/hosts/Prod","web 7  HOST prod (web7.wincomparator.net)","jmirre","Su20pinfo15","ssh -p 2206 jmirre@5.39.71.106
+",""
+"Racine/skores/hosts/Prod","web7 HOST  préprod (wincomparator web 7 )","jmirre","Su20pinfo15","ssh -p 2236 jmirre@51.254.227.136
+",""
+"Racine/skores/hosts/Prod","juventus serveur hote Juvarnish","jmirre","Su20pinfo15","ssh -p 2256 jmirre@5.39.71.56 (juventus.sportytrader.com)",""
+"Racine/skores/hosts/Prod","prod jail varnish webservices (varnishws)","jmirre","Su20pinfo15","ssh -p 222 jmirre@5.39.71.56",""
+"Racine/skores/hosts/Prod","JAIL Getafe badmix (getafe-cron)","jmirre","Pilatus1234","ssh -p 222 jmirre@91.121.34.50
+",""
+"Racine/skores/hosts/Prod","JAIL Getafe aptest (getafe-web)","jmirre","Supinfo2015","ssh -p 225 jmirre@91.121.34.50
+",""
+"Racine/skores/hosts/Prod","JAIL Getafe wc-cron2 (wc-cron; getafe.sportytrader.com)","jmirre","whyfuckinwhy1","ssh -p 232 jmirre@91.121.34.50
+",""
+"Racine/skores/hosts/Prod","JAIL Getafe getafe-backoffice (backoffice)","jmirre","Su20pinfo15","ssh -p 234 jmirre@91.121.34.50
+
+",""
+"Racine/skores/hosts/Prod","getafe HOST prod ","jmirre","Su20pinfo15","ssh -p 2224 jmirre@91.121.34.50
+",""
+"Racine/skores/hosts/préprod","BDD preprod real1 ( db sportytrader )","jmirre","Su20pinfo15","ssh -p 2233 jmirre@51.254.227.133
+",""
+"Racine/skores/hosts/préprod","dev","jmirre@famp.dev-famp-preprod:","test","","ssh dev		"
+"Racine/skores/hosts/préprod","forge","jmirre","Supinfo2015","jmirre@wcomp-integ",""
+"Racine/skores/hosts/préprod","JAIL préprod varnish ( préprod valencia )","jmirre","Su20pinfo15","ssh -p 222 jmirre@51.254.227.130",""
+"Racine/skores/hosts/préprod","JAIL préprod webservices ( préprod valencia )","jmirre","Su20pinfo15","ssh -p 221 jmirre@51.254.227.130
+",""
+"Racine/skores/hosts/préprod","JAIL sporytrader préprod (sportytrader.com.benfica.preprod.wincomparator.net)","jeremy","Supinfo2015","ssh -p 221 jeremy@51.254.227.132
+",""
+"Racine/skores/hosts/préprod","JAIL varnish préprod sportytrader jeremy.jgraf.skores.eu (BSD)","jmirre","Supinfo2015","ssh -p 222 jmirre@164.132.165.150",""
+"Racine/skores/hosts/préprod","préprod webservices (préprod valencia)","jmirre","Su20pinfo15","ssh -p 2230 jmirre@51.254.227.130
+",""
+"Racine/skores/hosts/préprod","sportytrader-preprod.skores.eu (sportytrader new préprod)","jmirre","Su20pinfo15","ssh -v -p 2243 jmirre@51.254.227.143
+",""
+"Racine/skores/hosts/préprod","turfoo webservices préprod","jmirre","Su20pinfo15","ssh -p 2244 jmirre@51.254.227.144
+",""
+"Racine/skores/hosts/préprod","web 7 jail préprod (wc-w7ap56.web7-preprod.wincomparator.net)","jmirre","Su20pinfo15","ssh -p 221 jmirre@51.254.227.136
+",""
+"Racine/skores/hosts/préprod","martial swarm","jmirre","Su20pinfo15","ssh -p 1789 jmirre@164.132.171.241",""
+"Racine/skores/hosts/préprod","getafe preprod 2 ( nouvelle vm FreeBSD11 )","jmirre","Su20pinfo15","ssh -p 2248 jmirre@51.254.227.148",""
+"Racine/skores/hosts/préprod","getafe preprod (old freebsd 10.2)","jmirre","Su20pinfo15","ssh -p 2234 jmirre@51.254.227.134",""
+"Racine/skores/hosts/préprod","JAIL getafe wc-crons( new wc-crons-preprod)","jmirre","Su20pinfo15","ssh -p 221 root@51.254.227.148",""
+"Racine/skores/hosts/préprod","JAIL getafe badmix ( new badmix-preprod)","jmirre","Su20pinfo15","ssh -p 222 root@51.254.227.148",""
+"Racine/skores/hosts/préprod","host préprod bayern","jmirre","Su20pinfo15","ssh -p 2253 root@51.254.46.153 ",""
+"Racine/skores/hosts/préprod","JAIL preprod w7 ap56loris","jmirre","Su20pinfo15","ssh -p 231 jmirre@51.254.46.153",""
+"Racine/skores/hosts/préprod","JAIL préprod w8blog1 ( blog1 )","jmirre","Su20pinfo15","ssh -p 222  jmirre@51.254.46.153 ",""
+"Racine/skores/web","gmail","jeremy.mirre@skores.com","Supinfo2015","gmail",""
+"Racine/skores/web","HipChat","jeremy.mirre@skores.com","Supinfo2015","skores.hipchat.com",""
+"Racine/skores/web","jenkins","","","http://jenkins.wincomparator.net:8080/",""
+"Racine/skores/web","JIRA Agile","jeremy.mirre@skores.com","Supinfo2015","https://windataco-fr.atlassian.net",""
+"Racine/skores/web","Phabricator","","","https://phabricator.wincomparator.net","auth providers à voir
+
+obligation de se loguer par methode oublie de mot de passe"
+"Racine/skores/web","Sauron","webtour","wcomp","http://sauron.wincomparator.net",""
+"Racine/skores/web","Sentry","","","https://app.getsentry.com/windataco",""
+"Racine/skores/web","workbench","root","root","",""
+"Racine/skores/web","turfoo accès préprod","turfuser","gErqMSeSBE0HvnHl3f9y","http://pma.turfoo-preprod.skores.eu/","1er accès à la console php myadmin"
+"Racine/skores/web","turfoo phpmyadmin serveur preprod","crenuy","yq2bLArb7zT1","http://pma.turfoo-preprod.skores.eu/","accès phpmyadmin ( 1er auth au serveur )
+"
+"Racine/skores/web","Graphana metrics dashboard","admin","graF4Sp0rty","http://164.132.171.200:3000/dashboard/db/service-mysql-metrics-2?var-host=real2.sportytrader.com&var-interval=$__auto_interval&from=1489831234276&to=now",""
+"Racine/Corbeille","ns3048656.ip-164-132-171.eu","root","t3stj3r3mY!","ns3048656.ip-164-132-171.eu",""
