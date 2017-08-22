@@ -15,8 +15,11 @@ def extract(files):
         with open(f, 'r') as csvfile: # open a file f as in_file
             data = csv.DictReader(csvfile) # read the file content to data
             for row in data:
-                print("adding row {0} to urls.".format(row['URL']))
-                urls.append(row['URL'])
+                #print("adding row {0} to urls.".format(row['URL']))
+
+                if "préprod" in row['Group']:
+                    print("adding row {0} to urls.".format(row['URL']))
+                    urls.append(row['URL'])
 
     for index, item in enumerate(urls):
         urls[index] = item.strip()

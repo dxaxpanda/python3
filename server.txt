@@ -1,15 +1,3 @@
-ssh -p 2203 jmirre@178.33.61.103
-ssh -p 221 jmirre@5.39.71.56
-ssh -p 231 jmirre@5.39.71.106
-ssh -p 2206 jmirre@5.39.71.106
-ssh -p 2236 jmirre@51.254.227.136
-ssh -p 2256 jmirre@5.39.71.56 (juventus.sportytrader.com)
-ssh -p 222 jmirre@5.39.71.56
-ssh -p 222 jmirre@91.121.34.50
-ssh -p 225 jmirre@91.121.34.50
-ssh -p 232 jmirre@91.121.34.50
-ssh -p 234 jmirre@91.121.34.50
-ssh -p 2224 jmirre@91.121.34.50
 ssh -p 2233 jmirre@51.254.227.133
 ssh -p 222 jmirre@51.254.227.130
 ssh -p 221 jmirre@51.254.227.130
