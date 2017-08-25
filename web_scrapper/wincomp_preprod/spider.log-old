@@ -1,0 +1,131 @@
+Aug 25 10:41:19  \program_name [25031]: Scrapy 1.4.0 started (bot: wincomp_preprod)
+Aug 25 10:41:19  \program_name [25031]: Overridden settings: {'SPIDER_MODULES': ['wincomp_preprod.spiders'], 'NEWSPIDER_MODULE': 'wincomp_preprod.spiders', 'BOT_NAME': 'wincomp_preprod'}
+Aug 25 10:41:19  \program_name [25031]: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.corestats.CoreStats']
+Aug 25 10:41:19  \program_name [25031]: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+Aug 25 10:41:19  \program_name [25031]: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+Aug 25 10:41:19  \program_name [25031]: Enabled item pipelines:
+[]
+Aug 25 10:41:19  \program_name [25031]: Spider opened
+Aug 25 10:41:19  \program_name [25031]: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+Aug 25 10:41:19  \program_name [25031]: Telnet console listening on 127.0.0.1:6023
+Aug 25 10:41:21  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/> (referer: None)
+Aug 25 10:41:23  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/> (referer: None)
+Aug 25 10:41:23  \program_name [25031]: Crawled (410) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/international/fiba-africa-championship-women-knockout-stage-174231/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/)
+Aug 25 10:41:23  \program_name [25031]: Ignoring response <410 http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/international/fiba-africa-championship-women-knockout-stage-174231/>: HTTP status code is not handled or not allowed
+Aug 25 10:41:24  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/etats-unis/nba-138882/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/)
+Aug 25 10:41:24  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/etats-unis/nba-138882/
+Aug 25 10:41:24  \program_name [25031]: Filtered duplicate request: <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/etats-unis/nba-138882/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+Aug 25 10:41:24  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/> (referer: None)
+Aug 25 10:41:26  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/philippines/pba-governors-cup-157648/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/)
+Aug 25 10:41:26  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/eurobasket/championnat-d-europe-hommes-groupe-b-138871/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/)
+Aug 25 10:41:26  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/philippines/pba-governors-cup-157648/
+Aug 25 10:41:26  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/eurobasket/championnat-d-europe-hommes-groupe-b-138871/
+Aug 25 10:41:26  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/international/rencontres-internationales-messieurs.-141528/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/)
+Aug 25 10:41:27  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/etats-unis/presaison-nba-139172/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/)
+Aug 25 10:41:27  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/international/rencontres-internationales-messieurs.-141528/
+Aug 25 10:41:27  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/etats-unis/presaison-nba-139172/
+Aug 25 10:41:30  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/portugal/primeira-liga-184/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:30  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/portugal/primeira-liga-184/
+Aug 25 10:41:31  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/grece/super-championnat-250/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:31  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/grece/super-championnat-250/
+Aug 25 10:41:31  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/coupe-du-monde/coupe-du-monde-qualification-groupe-1-289/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:31  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/coupe-du-monde/coupe-du-monde-qualification-groupe-1-289/
+Aug 25 10:41:33  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/france/ligue-1-97/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:33  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/france/ligue-1-97/
+Aug 25 10:41:34  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/portugal/segunda-liga-423/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:34  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/portugal/segunda-liga-423/
+Aug 25 10:41:34  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/coupe-du-monde/2014-mondial-bresil-144077/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:34  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/coupe-du-monde/2014-mondial-bresil-144077/
+Aug 25 10:41:34  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/italie/serie-b-106/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:34  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/italie/serie-b-106/
+Aug 25 10:41:38  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/eurobasket/championnat-d-europe-hommes-groupe-a-138870/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/)
+Aug 25 10:41:38  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/eurobasket/championnat-d-europe-hommes-groupe-a-138870/
+Aug 25 10:41:39  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/angleterre/carling-cup-268/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:39  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/angleterre/carling-cup-268/
+Aug 25 10:41:40  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/angleterre/premier-league-280/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:40  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/angleterre/premier-league-280/
+Aug 25 10:41:40  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/ligue-des-champions/uefa-ligue-des-champions-groupe-b-138926/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:41  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/ligue-des-champions/uefa-ligue-des-champions-groupe-b-138926/
+Aug 25 10:41:41  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/ligue-des-champions/uefa-ligue-des-champions-groupe-a-138925/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:41  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/ligue-des-champions/uefa-ligue-des-champions-groupe-a-138925/
+Aug 25 10:41:41  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/france/ligue-2-170/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:41  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/france/ligue-2-170/
+Aug 25 10:41:44  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/allemagne/2eme-division-181/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:45  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/allemagne/2eme-division-181/
+Aug 25 10:41:45  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/espagne/coupe-du-roi-14/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:45  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/espagne/coupe-du-roi-14/
+Aug 25 10:41:46  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/italie/serie-a-100/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:46  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/italie/serie-a-100/
+Aug 25 10:41:46  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/allemagne/bundesliga-296/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:46  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/allemagne/bundesliga-296/
+Aug 25 10:41:47  \program_name [25031]: Crawled (200) <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/espagne/primera-division-93/> (referer: http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/)
+Aug 25 10:41:47  \program_name [25031]: Logging in :
+http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/espagne/primera-division-93/
+Aug 25 10:41:47  \program_name [25031]: Closing spider (finished)
+Aug 25 10:41:47  \program_name [25031]: Dumping Scrapy stats:
+{'downloader/request_bytes': 11357,
+ 'downloader/request_count': 27,
+ 'downloader/request_method_count/GET': 27,
+ 'downloader/response_bytes': 5548330,
+ 'downloader/response_count': 27,
+ 'downloader/response_status_count/200': 26,
+ 'downloader/response_status_count/410': 1,
+ 'dupefilter/filtered': 23,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 8, 25, 10, 41, 47, 350357),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/410': 1,
+ 'log_count/DEBUG': 29,
+ 'log_count/INFO': 31,
+ 'memusage/max': 50999296,
+ 'memusage/startup': 50999296,
+ 'request_depth_max': 2,
+ 'response_received_count': 27,
+ 'scheduler/dequeued': 27,
+ 'scheduler/dequeued/memory': 27,
+ 'scheduler/enqueued': 27,
+ 'scheduler/enqueued/memory': 27,
+ 'start_time': datetime.datetime(2017, 8, 25, 10, 41, 19, 359466)}
+Aug 25 10:41:47  \program_name [25031]: Spider closed (finished)

@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+import scrapy
+
+
+class WindatacoSpider(scrapy.Spider):
+    name = 'windataco'
+    allowed_domains = ['www.wincomparator.com.preprod2.wincomparator.net']
+    start_urls = ['http://www.wincomparator.com.preprod2.wincomparator.net/']
+
+    def parse(self, response):
+        pass
