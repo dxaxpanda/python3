@@ -1,0 +1,39 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>&lt;type 'exceptions.NameError'&gt;</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 2.7.12: /usr/bin/python2.7<br>Thu Sep 14 17:38:26 2017</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///home/jeremy/skores/webservices/cgi-bin/send.py">/home/jeremy/skores/webservices/cgi-bin/send.py</a> in <strong><module></strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;19</small>&nbsp;CERT_FILE&nbsp;=&nbsp;form.getvalue('certificat')<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;20</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;21</small>&nbsp;wfile.write("&lt;html&gt;&lt;body&gt;&lt;h1&gt;POST!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;")<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;22</small>&nbsp;print&nbsp;"Thanks&nbsp;your&nbsp;notification&nbsp;has&nbsp;been&nbsp;sent&nbsp;with&nbsp;following&nbsp;parameters&nbsp;:"<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;23</small>&nbsp;print&nbsp;"&lt;p&gt;TOKEN:&nbsp;%s&lt;/p&gt;"&nbsp;%&nbsp;TOKEN<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">wfile <em>undefined</em></font></small></td></tr></table><p><strong>&lt;type 'exceptions.NameError'&gt;</strong>: name 'wfile' is not defined
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+("name 'wfile' is not defined",)
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>message&nbsp;=
+"name 'wfile' is not defined"
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/home/jeremy/skores/webservices/cgi-bin/send.py", line 21, in &lt;module&gt;
+    wfile.write("&lt;html&gt;&lt;body&gt;&lt;h1&gt;POST!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;")
+NameError: name 'wfile' is not defined
+
+-->
