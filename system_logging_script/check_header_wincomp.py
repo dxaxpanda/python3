@@ -30,14 +30,15 @@ home_pages = ('www.wincomparator.com',
               'www.wincomparator.com/pt-pt/home.html',
               'www.wincomparator.com/es-es/home.html',
               'www.wincomparator.com/de-de/home.html')
-tag = 'div'
-attribute = 'id'
-value = 'matchs-list'
+
+tag = "div"
+attrib = "id"
+value = "matchs-list"
 
 """php reload script variables"""
 script_args = """php /home/windataco/batch/current/src/bin/old/reload_all_arbo.php >> /var/log/windataco/import/log_prod_reload_all_arbo.log"""
-#logfile = "/var/log/windataco/batch/check_wincomp_url.log"
-logfile = "/opt/check_wincomp_url.log"
+logfile = "/var/log/windataco/batch/check_wincomp_url.log"
+#logfile = "/opt/check_wincomp_url.log"
 
 
 def log_setup(logfile):
@@ -93,8 +94,8 @@ def Parse_HTML(tag, attrib, value, result):
     parsed_html = BeautifulSoup(result, "html.parser")
     
     get_value = parsed_html.find(tag, attrs={attrib:value})#.text 
-    logging.info("[RUN]\t Got value: %s", get_value)
-
+    #logging.info("[RUN]\t Got value: %s", get_value)
+    print get_value
     return get_value
 
 def Menu_Rebuild(url):
@@ -162,12 +163,13 @@ def main():
     for homepage in home_pages:
         logging.info("[RUN]\t"+"-"*50)
         logging.info("[RUN]\tChecking page: ' %s ' ...", homepage)
-        result = Get_URL(homepage).read()
+        result = Get_URL(homepage)
+        html = result.read()
         logging.info("[RUN]\tChecking whether %s div is present with values :", value)
         logging.info("[RUN]\tTag: %s", tag)
-        logging.info("[RUN]\tAttribute: %s", attribute)
+        logging.info("[RUN]\tAttribute: %s", attrib)
         logging.info("[RUN]\tValue: %s", value)
-        home_page_html = Parse_HTML(tag, attribute, value, result)
+        home_page_html = Parse_HTML(tag, attrib, value, html)
         logging.info("[RUN]\tChecking cache freshness...")
         cache_status = Get_URL(homepage).info().getheader('X-Cache')
         if cache_status == "HIT":
@@ -178,10 +180,10 @@ def main():
             logging.info("[RUN]\tNothing to do...")
 
         else:
-            Menu_Rebuild(url)
+            Menu_Rebuild(homepage)
 
             if cache_status == "HIT":
-                Varnish_Purge(url)
+                Varnish_Purge(homepage)
 
                  
          
