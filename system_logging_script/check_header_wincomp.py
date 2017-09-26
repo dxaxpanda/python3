@@ -31,9 +31,39 @@ home_pages = ('www.wincomparator.com',
               'www.wincomparator.com/es-es/home.html',
               'www.wincomparator.com/de-de/home.html')
 
-tag = "div"
-attrib = "id"
-value = "matchs-list"
+home_tag = "div"
+home_attrib = "id"
+home_value = "matchs-list"
+
+
+"""Football + tennis betting odds pages"""
+
+football_odds = ('www.wincomparator.com/en-gb/odds/soccer/',
+                'www.wincomparator.com/it-it/quote/calcio/',
+                'www.wincomparator.com/es-es/cuotas/futbol/',
+                'www.wincomparator.com/pl-pl/kurzy/pilka-nozna/',
+                'www.wincomparator.com/fr-fr/cotes/football/',
+                'www.wincomparator.com/el-gr/apodoseis/podosfairo/',
+                'www.wincomparator.com/da-dk/spilforslag-odds/fodbold/',
+                'www.wincomparator.com/pt-pt/cotas/futebol/',
+                'www.wincomparator.com/de-de/quoten/fusball/'
+                )
+
+tennis_odds = ('www.wincomparator.com/de-de/quoten/tennis/',
+               'www.wincomparator.com/en-gb/odds/tennis/',
+               'www.wincomparator.com/fr-fr/cotes/tennis/',
+               'www.wincomparator.com/es-es/cuotas/tenis/',
+               'www.wincomparator.com/el-gr/apodoseis/tennis/',
+               'www.wincomparator.com/pt-pt/cotas/tenis/',
+               'www.wincomparator.com/it-it/quote/tennis/',
+               'www.wincomparator.com/pl-pl/kurzy/tenis/',
+               'www.wincomparator.com/da-dk/spilforslag-odds/tennis/')
+
+odds_tag = "div"
+odds_attrib = "class"
+odds_value = "list_cato"
+
+odds_all_pages = football_odds + tennis_odds
 
 """php reload script variables"""
 script_args = """php /home/windataco/batch/current/src/bin/old/reload_all_arbo.php >> /var/log/windataco/import/log_prod_reload_all_arbo.log"""
@@ -110,10 +140,13 @@ def Varnish_Purge(url):
     """ Send purge request to varnish. """
     logging.info("[RUN]\tSending purge request to varnish.")
     logging.info("[RUN]\tURL=%s", url)
-    varnish = httplib.HTTPConnection("www.wincomparator.com")
+    #varnish = httplib.HTTPConnection("www.wincomparator.com")
+    varnish = httplib.HTTPConnection("10.1.0.5")
     purge_req = varnish.request("PURGE", url)
     purge_resp = varnish.getresponse()
-    logging.info("[RUN]\tInfo : %s", purge_resp)
+    logging.info("[RUN]\tHeaders : %s\n", purge_resp.getheaders())
+    logging.info("[RUN]\tBody : %s\n", purge_resp.read())
+    
     
     
 def Reload_Arbo(script_args, logfile):
@@ -164,19 +197,19 @@ def main():
         logging.info("[RUN]\t"+"-"*50)
         logging.info("[RUN]\tChecking page: ' %s ' ...", homepage)
         result = Get_URL(homepage)
-        html = result.read()
-        logging.info("[RUN]\tChecking whether %s div is present with values :", value)
-        logging.info("[RUN]\tTag: %s", tag)
-        logging.info("[RUN]\tAttribute: %s", attrib)
-        logging.info("[RUN]\tValue: %s", value)
-        home_page_html = Parse_HTML(tag, attrib, value, html)
+        home_html = result.read()
+        logging.info("[RUN]\tChecking whether %s div is present with values :", home_value)
+        logging.info("[RUN]\tTag: %s", home_tag)
+        logging.info("[RUN]\tAttribute: %s", home_attrib)
+        logging.info("[RUN]\tValue: %s", home_value)
+        home_page_html = Parse_HTML(home_tag, home_attrib, home_value, home_html)
         logging.info("[RUN]\tChecking cache freshness...")
         cache_status = Get_URL(homepage).info().getheader('X-Cache')
         if cache_status == "HIT":
             logging.info("[RUN]\tPage %s is a HIT", homepage)
 
         if home_page_html:
-            logging.info("[RUN]\t%s part is present inside the page !", value)
+            logging.info("[RUN]\t%s part is present inside the page !", home_value)
             logging.info("[RUN]\tNothing to do...")
 
         else:
@@ -185,6 +218,34 @@ def main():
             if cache_status == "HIT":
                 Varnish_Purge(homepage)
 
+    """Now we are going to check the odds pages..."""
+    
+    logging.info("[RUN]\tNow trying to check odds pages...")
+    
+    for odds_page in odds_all_pages:
+        logging.info("[RUN]\t"+"-"*50)
+        logging.info("[RUN]\tChecking page: ' %s ' ...", odds_page)
+        result = Get_URL(odds_page)
+        odds_html = result.read()
+        logging.info("[RUN]\tChecking whether %s div is present with values :", odds_value)
+        logging.info("[RUN]\tTag: %s", odds_tag)
+        logging.info("[RUN]\tAttribute: %s", odds_attrib)
+        logging.info("[RUN]\tValue: %s", odds_value)
+        odds_page_html = Parse_HTML(odds_tag, odds_attrib, odds_value, odds_html)
+        logging.info("[RUN]\tChecking cache freshness...")
+        cache_status = Get_URL(odds_page).info().getheader('X-Cache')
+        if cache_status == "HIT":
+            logging.info("[RUN]\tPage %s is a HIT", odds_page)
+
+        if odds_page_html:
+            logging.info("[RUN]\t%s part is present inside the page !", odds_value)
+            logging.info("[RUN]\tNothing to do...")
+
+        else:
+            Menu_Rebuild(odds_page)
+
+            if cache_status == "HIT":
+                Varnish_Purge(odds_page)
                  
          
 
