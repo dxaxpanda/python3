@@ -1,0 +1,2 @@
+Aug 25 13:30:24  \program_name [12140]: Scrapy 1.4.0 started (bot: wincomp_preprod)
+Aug 25 13:30:24  \program_name [12140]: Overridden settings: {'NEWSPIDER_MODULE': 'wincomp_preprod.spiders', 'BOT_NAME': 'wincomp_preprod', 'SPIDER_MODULES': ['wincomp_preprod.spiders']}

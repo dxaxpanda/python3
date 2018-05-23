@@ -1,0 +1,120 @@
+Aug 25 13:30:24  \program_name [12141]: Scrapy 1.4.0 started (bot: wincomp_preprod)
+Aug 25 13:30:24  \program_name [12141]: Overridden settings: {'BOT_NAME': 'wincomp_preprod', 'SPIDER_MODULES': ['wincomp_preprod.spiders'], 'NEWSPIDER_MODULE': 'wincomp_preprod.spiders'}
+Aug 25 13:30:24  \program_name [12140]: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+Aug 25 13:30:24  \program_name [12141]: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.memusage.MemoryUsage']
+Aug 25 13:30:24  \program_name [12140]: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+Aug 25 13:30:24  \program_name [12140]: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+Aug 25 13:30:24  \program_name [12140]: Enabled item pipelines:
+[]
+Aug 25 13:30:24  \program_name [12140]: Spider opened
+Aug 25 13:30:24  \program_name [12141]: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+Aug 25 13:30:24  \program_name [12140]: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+Aug 25 13:30:24  \program_name [12141]: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+Aug 25 13:30:24  \program_name [12140]: Telnet console listening on 127.0.0.1:6024
+Aug 25 13:30:24  \program_name [12141]: Enabled item pipelines:
+[]
+Aug 25 13:30:24  \program_name [12141]: Spider opened
+Aug 25 13:30:24  \program_name [12141]: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+Aug 25 13:30:24  \program_name [12141]: Telnet console listening on 127.0.0.1:6025
+Aug 25 13:31:24  \program_name [12100]: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+Aug 25 13:31:24  \program_name [12141]: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+Aug 25 13:31:24  \program_name [12140]: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+Aug 25 13:31:25  \program_name [12100]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/> (failed 1 times): 503 Service Unavailable
+Aug 25 13:31:25  \program_name [12141]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/> (failed 1 times): 503 Service Unavailable
+Aug 25 13:31:25  \program_name [12100]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/> (failed 1 times): 503 Service Unavailable
+Aug 25 13:31:25  \program_name [12141]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/> (failed 1 times): 503 Service Unavailable
+Aug 25 13:31:25  \program_name [12141]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/> (failed 1 times): 503 Service Unavailable
+Aug 25 13:31:25  \program_name [12100]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/> (failed 1 times): 503 Service Unavailable
+Aug 25 13:31:25  \program_name [12140]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/> (failed 1 times): 503 Service Unavailable
+Aug 25 13:31:25  \program_name [12140]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/> (failed 1 times): 503 Service Unavailable
+Aug 25 13:31:25  \program_name [12140]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/> (failed 1 times): 503 Service Unavailable
+Aug 25 13:31:34  \program_name [12141]: Received SIG_SETMASK, shutting down gracefully. Send again to force 
+Aug 25 13:31:34  \program_name [12141]: Closing spider (shutdown)
+Aug 25 13:31:34  \program_name [12141]: Received SIG_SETMASK twice, forcing unclean shutdown
+Aug 25 13:31:34  \program_name [12141]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+Aug 25 13:31:34  \program_name [12141]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+Aug 25 13:31:34  \program_name [12141]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+Aug 25 13:31:34  \program_name [12141]: Dumping Scrapy stats:
+{'downloader/exception_count': 3,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 3,
+ 'downloader/request_bytes': 1822,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'downloader/response_bytes': 1419,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/503': 3,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2017, 8, 25, 13, 31, 34, 918621),
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 10,
+ 'memusage/max': 52498432,
+ 'memusage/startup': 51347456,
+ 'retry/count': 6,
+ 'retry/reason_count/503 Service Unavailable': 3,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 3,
+ 'scheduler/dequeued': 6,
+ 'scheduler/dequeued/memory': 6,
+ 'scheduler/enqueued': 9,
+ 'scheduler/enqueued/memory': 9,
+ 'start_time': datetime.datetime(2017, 8, 25, 13, 30, 24, 798237)}
+Aug 25 13:31:34  \program_name [12141]: Spider closed (shutdown)
+Aug 25 13:32:24  \program_name [12100]: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+Aug 25 13:32:24  \program_name [12140]: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+Aug 25 13:32:26  \program_name [12140]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/> (failed 2 times): 503 Service Unavailable
+Aug 25 13:32:27  \program_name [12100]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/> (failed 2 times): 503 Service Unavailable
+Aug 25 13:32:27  \program_name [12100]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/> (failed 2 times): 503 Service Unavailable
+Aug 25 13:32:27  \program_name [12140]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/> (failed 2 times): 503 Service Unavailable
+Aug 25 13:32:27  \program_name [12100]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/> (failed 2 times): 503 Service Unavailable
+Aug 25 13:32:27  \program_name [12140]: Retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/> (failed 2 times): 503 Service Unavailable
+Aug 25 13:32:44  \program_name [12100]: Received SIG_SETMASK, shutting down gracefully. Send again to force 
+Aug 25 13:32:44  \program_name [12100]: Closing spider (shutdown)
+Aug 25 13:32:44  \program_name [12100]: Received SIG_SETMASK twice, forcing unclean shutdown
+Aug 25 13:32:44  \program_name [12100]: Gave up retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+Aug 25 13:32:44  \program_name [12100]: Gave up retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+Aug 25 13:32:44  \program_name [12100]: Gave up retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+Aug 25 13:32:47  \program_name [12140]: Received SIG_SETMASK, shutting down gracefully. Send again to force 
+Aug 25 13:32:47  \program_name [12140]: Closing spider (shutdown)
+Aug 25 13:32:47  \program_name [12140]: Received SIG_SETMASK twice, forcing unclean shutdown
+Aug 25 13:32:47  \program_name [12140]: Gave up retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+Aug 25 13:32:47  \program_name [12140]: Gave up retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/football/> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+Aug 25 13:32:47  \program_name [12140]: Gave up retrying <GET http://www.wincomparator.com.preprod2.wincomparator.net/fr-fr/cotes/basketball/> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]

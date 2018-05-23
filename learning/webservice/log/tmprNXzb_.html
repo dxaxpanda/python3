@@ -1,0 +1,69 @@
+<body bgcolor="#f0f0f8">
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#6622aa">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>&lt;type 'exceptions.KeyboardInterrupt'&gt;</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial">Python 2.7.12: /usr/bin/python2.7<br>Thu Sep 14 17:25:53 2017</font></td></tr></table>
+    
+<p>A problem occurred in a Python script.  Here is the sequence of
+function calls leading up to the error, in the order they occurred.</p>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///home/jeremy/skores/webservices/cgi-bin/send.py">/home/jeremy/skores/webservices/cgi-bin/send.py</a> in <strong><module></strong>()</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;12</small>&nbsp;APPLE_API_URL&nbsp;=&nbsp;"https://api.push.apple.com/3/device"<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;13</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;&nbsp;14</small>&nbsp;form&nbsp;=&nbsp;cgi.FieldStorage(environ={'REQUEST_METHOD':&nbsp;'POST'})<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;15</small>&nbsp;<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;&nbsp;16</small>&nbsp;TOKEN&nbsp;=&nbsp;form.getvalue('token')<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">form <em>undefined</em>, <strong>cgi</strong>&nbsp;= &lt;module 'cgi' from '/usr/lib/python2.7/cgi.pyc'&gt;, cgi.<strong>FieldStorage</strong>&nbsp;= &lt;class cgi.FieldStorage&gt;, environ <em>undefined</em></font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///usr/lib/python2.7/cgi.py">/usr/lib/python2.7/cgi.py</a> in <strong>__init__</strong>(self=FieldStorage(None, None, None), fp=None, headers={'content-type': 'application/x-www-form-urlencoded'}, outerboundary='', environ={'REQUEST_METHOD': 'POST'}, keep_blank_values=0, strict_parsing=0)</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;503</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.done&nbsp;=&nbsp;0<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;504</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;ctype&nbsp;==&nbsp;'application/x-www-form-urlencoded':<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;505</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.read_urlencoded()<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;506</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif&nbsp;ctype[:10]&nbsp;==&nbsp;'multipart/':<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;507</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.read_multi(environ,&nbsp;keep_blank_values,&nbsp;strict_parsing)<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090"><strong>self</strong>&nbsp;= FieldStorage(None, None, None), self.<strong>read_urlencoded</strong>&nbsp;= &lt;bound method FieldStorage.read_urlencoded of FieldStorage(None, None, None)&gt;</font></small></td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=0 border=0>
+<tr><td bgcolor="#d8bbff"><big>&nbsp;</big><a href="file:///usr/lib/python2.7/cgi.py">/usr/lib/python2.7/cgi.py</a> in <strong>read_urlencoded</strong>(self=FieldStorage(None, None, None))</td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;604</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;read_urlencoded(self):<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;605</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"""Internal:&nbsp;read&nbsp;data&nbsp;in&nbsp;query&nbsp;string&nbsp;format."""<br>
+</tt></font></td></tr>
+<tr><td bgcolor="#ffccee"><tt>=&gt;<small>&nbsp;&nbsp;606</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qs&nbsp;=&nbsp;self.fp.read(self.length)<br>
+</tt></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;607</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;self.qs_on_post:<br>
+</tt></font></td></tr>
+<tr><td><font color="#909090"><tt>&nbsp;&nbsp;<small>&nbsp;&nbsp;608</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;qs&nbsp;+=&nbsp;'&amp;'&nbsp;+&nbsp;self.qs_on_post<br>
+</tt></font></td></tr>
+<tr><td><small><font color="#909090">qs <em>undefined</em>, <strong>self</strong>&nbsp;= FieldStorage(None, None, None), self.<strong>fp</strong>&nbsp;= &lt;open file '&lt;stdin&gt;', mode 'r'&gt;, self.fp.<strong>read</strong>&nbsp;= &lt;built-in method read of file object&gt;, self.<strong>length</strong>&nbsp;= -1</font></small></td></tr></table><p><strong>&lt;type 'exceptions.KeyboardInterrupt'&gt;</strong>: 
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>args&nbsp;=
+()
+<br><tt><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>&nbsp;</tt>message&nbsp;=
+''
+
+
+<!-- The above is a description of an error in a Python program, formatted
+     for a Web browser because the 'cgitb' module was enabled.  In case you
+     are not reading this in a Web browser, here is the original traceback:
+
+Traceback (most recent call last):
+  File "/home/jeremy/skores/webservices/cgi-bin/send.py", line 14, in &lt;module&gt;
+    form = cgi.FieldStorage(environ={'REQUEST_METHOD': 'POST'})
+  File "/usr/lib/python2.7/cgi.py", line 505, in __init__
+    self.read_urlencoded()
+  File "/usr/lib/python2.7/cgi.py", line 606, in read_urlencoded
+    qs = self.fp.read(self.length)
+KeyboardInterrupt
+
+-->

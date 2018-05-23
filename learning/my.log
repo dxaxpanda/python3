@@ -1,0 +1,8 @@
+Sep 20 15:50:01 program_name [27903]: Hello, World!
+Sep 20 15:53:16 program_name [28316]: Hello, World!
+Sep 20 15:53:23 program_name [28405]: Hello, World!
+Sep 20 15:53:29 program_name [28490]: Hello, World!
+Sep 20 15:55:16 __name__ [28737]: Hello, World!
+Sep 20 15:55:42 __name__ [28925]: Hello, World!
+Sep 20 15:55:49 __name__ [29050]: Hello, World!
+Sep 20 15:56:11 url_checker.py [29162]: Hello, World!

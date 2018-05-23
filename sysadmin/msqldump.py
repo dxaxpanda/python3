@@ -1,0 +1,105 @@
+"""Msqldump
+
+Usage:
+    msqldump.py -u <user> [ -p <password> ] -H <host> --db <database>... [ --tables <tables_name>...]
+    msqldump.py -u <user> [ -p <password> ] -H <host> --db <database>... [ -o FILE | -O DIR ] [ -v | -r | -z <compress> ]
+    msqldump.py -h
+    
+Options:
+    -h --help                       Show help
+    --version                       Show version
+    --tables=<tables_names>                 Databases to dump
+    -u --user <user>                User login 
+    -H --hostname <host>            DB host
+    -p --password <password>         Databases to dump
+    -c --config CONFIG              Config file to read
+    -r --remove                     Remove old directories
+    -z --compress <compression>     Also provide compressed data
+    -O --output-dir DIR             output directory [default: .]
+    -o --output-file FILE           output file ( single dump file )
+    -v --verbose                    Verbose mode
+"""
+
+
+
+import subprocess
+import os
+from docopt import docopt
+import datetime
+
+
+
+
+def dump(mysql_user,mysql_password,mysql_hostname,mysql_dump_dir,mysql_dbs,*mysql_tables):
+    ''' Attempts databases dumps'''
+
+    # current date for backups
+    timestamp = datetime.datetime.now().strftime("%y-%m-%d")
+    mysql_dbs = ' '.join(str(db) for db in mysql_dbs)
+
+    # only add tables if length is 1 database
+    if len(mysql_dbs) == 1: 
+        mysql_tables = ' '.join(mysql_tables[0])
+    
+    mysqldump = "mysqldump -u %s -p%s -h %s %s %s > %s" % (mysql_user,mysql_password,mysql_hostname,mysql_dbs,mysql_tables,mysql_dump_dir)
+
+    try:
+        print("[!] Attempting to dump databases with following commands:")
+        print(mysqldump)
+        with subprocess.Popen(mysqldump + '/' + timestamp + '.sql',stdout=subprocess.PIPE,shell=True) as process:
+            print("Writing to default logfile")
+            log.write(process.stdout.read())
+            #process = subprocess.Popen(mysqldump + '/' + timestamp + ".sql", shell=True)
+    except OSError:
+        pass
+
+    #output = subprocess.call(mysqldump)
+
+    
+
+def clear_file(dump):
+    ''' clear old files '''
+    print("[*] Attempting old file clear...")
+    
+    # check all databases and compare dump names for override
+    # get future dump name
+    dump_name = dump+now+compression
+    if os.stat(dump_dir+'/'+dump_name):
+        print("[*] Flushing old database: ", dump_name)
+        os.remove("%s/%s" % (dump_dir, dump_name))
+        print("[*] Done")
+
+
+def main():
+    ''' launch the script '''
+
+    dbs = [dbs for dbs in arguments['<database>']]
+    tables = ''
+    if arguments['--tables']:
+        tables = [tables for tables in  arguments['--tables'][0].rsplit(sep=',') if (dbs) == 1 ]
+        print("these are our tables", ' '.join(tables))
+    user, password = arguments['--user'], arguments['--password']
+    host = arguments['--hostname']
+    dump_dir = arguments['--output-dir'] 
+    compress = arguments['--compress'] 
+
+    # run the actual dump function
+    print("running dump func")
+    dump(user, password, host, dump_dir, dbs, tables)
+
+    print("[*] These are the current databases passed in arguments: ", dbs)
+    print("[*] Current time is: ", now)
+    if compress:
+        print("[*] '--compress'  option passed.")
+        
+    if arguments['--remove'] is True:
+        print("[*] '--remove'  option passed.")
+
+
+if __name__ == '__main__':
+    arguments = docopt(__doc__, version='Naval Fate 2.0')
+    ''' print the arguments '''
+    print(arguments)
+    
+
+    main()
